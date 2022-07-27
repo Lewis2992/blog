@@ -1,10 +1,10 @@
-const userReducer = (state = [], action) => {
+const usersReducer = (state = [], action) => {
 	switch(action.type) {
-		case 'FETCH_USER':
+		case 'FETCH_USERS':
 			return [...state, action.payload];
-		default: 
+		default:
 			return state;
 	}
 };
 
-export default userReducer;
+export default usersReducer;
